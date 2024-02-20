@@ -1,0 +1,46 @@
+---
+interface NavigationLink {
+  name: string;
+  href: string;
+}
+
+const navigationLinks: NavigationLink[] = [
+  {
+    name: 'About',
+    href: '/#about',
+  },
+  {
+    name: 'Services',
+    href: '/#services',
+  },
+  {
+    name: 'Works',
+    href: '/#works',
+  },
+  {
+    name: 'Reviews',
+    href: '/#reviews',
+  },
+  {
+    name: 'Contact',
+    href: '/contact',
+  },
+];
+
+const linkClass = 'text-titleDarkText font-normal block relative overflow-hidden group h-fit leading-base text-[1.125rem] 2xl:text-xl 3xl:text-[1.5rem]';
+---
+
+<div class="flex items-start text-start gap-x-20 text-titleDarkText">
+  <span class="hidden sm:flex uppercase font-semibold text-[.875rem] 2xl:text-[1.125rem] 3xl:text-xl text-availableWork">
+    Available for work March 2024
+  </span>
+  <ul class="flex items-start flex-col gap-y-1">
+    {navigationLinks.map(({ name, href}) => (
+      <li>
+        <a href={href} class={linkClass}>
+          { name }
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
