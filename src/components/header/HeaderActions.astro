@@ -27,18 +27,19 @@ const navigationLinks: NavigationLink[] = [
   },
 ];
 
-const linkClass = 'text-titleDarkText font-medium block relative overflow-hidden group h-fit leading-base text-lg 2xl:text-xl 3xl:text-2xl';
+const linkClass = 'font-medium block relative overflow-hidden group h-fit text-titleDarkText leading-base text-lg 2xl:text-xl 3xl:text-2xl';
 ---
 
 <div class="flex items-start text-start gap-x-20 text-titleDarkText">
-  <span class="hidden sm:flex uppercase font-semibold text-sm 2xl:text-lg 3xl:text-xl text-availableWork">
+  <span class="hidden sm:flex uppercase font-semibold text-sm 2xl:text-lg 3xl:text-xl text-textSecundary">
     Available for work March 2024
   </span>
   <ul class="flex items-start flex-col gap-y-1">
     {navigationLinks.map(({ name, href}) => (
       <li>
         <a href={href} class={linkClass}>
-          { name }
+          <span class="link1">{name}</span>
+          <span class="link2">{name}</span>
         </a>
       </li>
     ))}

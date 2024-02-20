@@ -1,4 +1,6 @@
 @import url(./fonts.css);
+@import url(./custom.css);
+
 
 * {
   min-width: 0;
@@ -29,9 +31,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  line-height: 96.5%;
+  letter-spacing: -.0275em;
 }
 
 p {
   text-wrap: pretty;
   line-height: 130%;
 }
+
