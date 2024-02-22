@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import aboutPicture from "../../assets/about-picture.webp";
+---
+
+<div
+  class="overflow-hidden z-0 max-w-sm 2xl:max-w-lg 3xl:max-w-xl relative mx-auto pointer-events-none"
+>
+  <img
+    class="mx-auto rounded 2xl:rounded-2xl aspect-square sm:aspect-auto object-cover opacity-75"
+    src={aboutPicture.src}
+    alt="Side profile of Jose Navarro"
+    loading="lazy"
+    decoding="async"
+    data-nimg="1"
+    style="color: transparent;"
+  />
+  <div
+    class="h-full w-full top-0 bg-gradient-to-t from-secondary-400 opacity-80 opaci xl:opacity-75 to-transparent absolute rounded 2xl:rounded-2xl"
+  >
+  </div>
+</div>
