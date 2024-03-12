@@ -1,4 +1,8 @@
 @font-face {
-  font-family: 'Overused-Grotesk';
-  src: url(../assets/fonts/Overused-Grotesk.woff2) format("woff2");
+  font-family: 'Overused Grotesk';
+  src: 
+    url('fonts/OverusedGrotesk-VF.woff2') format('woff2 supports variations'),
+    url('fonts/OverusedGrotesk-VF.woff2') format('woff2-variations');
+  font-weight: 350 400 500 600 700;
+  font-display: swap;
 }

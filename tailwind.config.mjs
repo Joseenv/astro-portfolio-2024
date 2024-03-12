@@ -2,17 +2,6 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		colors: {
-      dark: '#080807',
-      light: '#D1D1C7',
-      textSecundary: '#6B645C',
-      titleLightText: '#D1D1C7',
-      titleDarkText: '#393632',
-      subtitleDarkText: '#DDDDD5',
-      titleAccentDark: '#BFBFB1',
-      availableWork: '#A29E9A',
-      cards: '#E1E1DB',
-    },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.25rem' }],
@@ -26,6 +15,17 @@ export default {
       responsive: ['clamp(3rem,-.057rem + 10.0714vw,10.25rem)']
     },
 		extend: {
+      colors: {
+        dark: '#080807',
+        light: '#D1D1C7',
+        textSecundary: '#6B645C',
+        titleLightText: '#D1D1C7',
+        titleDarkText: '#393632',
+        subtitleDarkText: '#DDDDD5',
+        titleAccentDark: '#BFBFB1',
+        availableWork: '#A29E9A',
+        cards: '#E1E1DB',
+      },
       lineHeight: {
         'base': '130%',
       }
